@@ -1,0 +1,18 @@
+- on va dans le site de bootswatch et on choisi un théme puis on clic sur pulse et bootstrap.min.css
+- on va ensuite créer un fichier dans public/css dans le quel on colle le code css du théme choisi (ici pulse)
+- ces fichier css sont appelés dans le master page (master.blade.php), qui se trouve dans ressources/views/
+- On va rendre le link du fichier css dynamique (par la création d'une variable dans le href.
+	- on va créer une nouvelle settings dans voyager.
+	- on choisi l'onglet site et on créer notre paramétre tout en bas 
+	- avant d'enregister on clic sur option et on va créer un fichier Json pour définir nos thémes:
+	  {
+    "default" : "minty",
+    "options" : {
+        "minty": "minty",
+        "darkly": "darkly"  (pulse quartz sketchy
+
+    }
+}
+	- et on créer notre setting
+- On va ensuite sur le fichier master.blade.php pour modifier le link du css:
+  <link rel="stylesheet" href="{{ asset('css/' . setting('site.theme') . '.min.css') }}">

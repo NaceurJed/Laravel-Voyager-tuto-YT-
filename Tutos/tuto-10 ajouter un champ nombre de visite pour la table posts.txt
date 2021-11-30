@@ -1,0 +1,9 @@
+- Pour ajouter un champ à une table on va dans voyager/tools/database
+- on clic sur "editer" pour une table
+- on clic sur "ajouter une nouvelle colonne"
+
+- Puis on va modifier le fichier siteController pour incrémenter la vaiable nb_visite et faire un save().
+
+- En suite on veut voir ce nouveau champ dans notre administrateur voyager:
+	- on va dans tools->BREAD et on click sur "edit" de la table voulus
+	- et on coche ou on veut voir ce champ (on laisse "naviger" et "lire" ).

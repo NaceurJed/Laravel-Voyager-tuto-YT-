@@ -1,0 +1,18 @@
+**** Création de nouveau menu ****
+(On doit créer les menus qu'on a dans notre site, dans l'administrateur voyager)
+- Pour créer un nouveau menu on doit aller dans Tools->Menu Builder (je l'ai nommé "Nouveau-Menu")
+- Puis on revient dans menu builder et on clic sur "constructeur" de notre menu qu'on vient de créer.
+- on clic sur nouvel element du menu
+- Puis on va créer les menu qu'on a dans le site ("Home", "Blog", "About" ...): 
+  dans le champ URL on met ce qu'on a dans le site, exemple pour Home: /
+						    exemple pour Blog: /blog
+- (On peut même changer l'ordre par drag&drop).
+- On revient sur le fichier où est codé noter menu: ressources/views/partials/navbar.blade.php
+- on va créer un nouveau fichier dans partials (nav.blade.php): on faite l'instruction menu('Nouveau-Menu') 
+  va contenir plusieurs information sur notre menu qu'on créer dans voyager, on va donc exploiter ces info.
+- l'instruction menu('Nouveau-Menu') va nous ramener le contenu d'un autre fichier si on le spécifie dans cette 
+  même instruction: menu('Nouveau-Menu', 'partials.nav'). on lui demande de ramener le fichier nav qui se trouve
+  dans le dossier partials.
+- si on fait un dd de la variable $items qu'on a défini dans le fichier nav, et qu'on appel nav 
+  grace à menu('Nouveau-Menu', 'partials.nav'), ça va nous ramener plein d'info sur le menu créer dans voyager.
+- On va donc boucler sur la variable $items dans le fichier nav.blade.php on récupérant les infos qu'on veut.

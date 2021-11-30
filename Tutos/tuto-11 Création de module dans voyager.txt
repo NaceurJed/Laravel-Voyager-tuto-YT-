@@ -1,0 +1,17 @@
+**** On veut créer un module de contact pour voir les messages de ceux qui veulent nous contacter ****
+- il nous faut une table dans la base de données
+	- on va tools->database-> créer une nouvelle table
+	- Nom de la table: ça doit être au pluriel et ACTIVER "Créer un modèle pour cette table ?" 
+	**** ATTENTION le model sera générer directement dans le dossier App ****
+	- on ajoute autant de colonnes voulus et on fini par clicker sur "Ajouter les Timestamps".
+
+	- On doit pouvoir gérer cette table depuis l'administrateur voyager:
+		- on va tools->database->clicker sur "Ajouter le BREAD à cette table"
+		- On modifie ce qu'on veut modifier et on soumet
+- On va voir apparaitre dans le menu de gauche de voyager le menu contacts tout en bas, pour le remonter:
+	- tools->menu Builder-> on clik sur le "constructeur" du admin (c'est le menu backEnd)
+	- on le déplace où on veut et on fait "editer" pour lui rajouter une icone par exemple (la liste des icônes
+	  se trouve dans compass)
+
+
+- et finalement on créer la vue contact (tuto-12) avec la procédure d'enregistrement de nouveaux contact.

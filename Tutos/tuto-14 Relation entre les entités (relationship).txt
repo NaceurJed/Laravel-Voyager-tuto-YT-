@@ -1,0 +1,14 @@
+** on va faire une relation entre gamme et produit: une gamme peut avoir plusieur produit 
+mais un produit ne peut avoir qu'une seul gamme -> OneToMany
+
+- On va créer 2 tables: products et gammes avec leur model
+- on va dans tools-> database (on créer les tables au pluriels)
+- on ajoute le BREAD pour les 2 tables: on medifie description en text area et image en image comme type d'entrée.
+- Ces deux modules vont se trouver dans le menu principale.
+- Pour créer la relation, on ouvre le BREAD de product et tout en bas on clic sur créer une relation:
+	- un produit appartien à une seule gamme: donc Product - "BelongsTo" - Gamme- App\Gamme
+	- Afficher la gamme: title
+	- Enregistrer le gamme: id
+- Aprés avoir crée 2 gammes, on va créer un produit et on dans le champ gamme on voit apparaitre une liste de gammes
+- on revient sur le BREAD de products pour enlever de la vue le gamme_id (en décochant les cases)
+

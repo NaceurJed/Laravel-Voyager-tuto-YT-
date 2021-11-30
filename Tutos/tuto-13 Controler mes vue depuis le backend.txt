@@ -1,0 +1,12 @@
+*** on va travailler avec les settings, ce sont des helpers = des méthodes qui vont raméner la valeur qui correspond.
+Dans la page contact nous avons des infos fixes (num tel, email et carte).
+- Si on va dans voyager-> settings: on va voir deux onglets: Site et Admin
+- On va pouvoir ajouter un autre onglet qu'on appelera contact: On va tout en bas "Nouveau paramétre" et on remplie
+  par exemple nom: téléphone
+	      Clé: telephone
+	      type: champ texte
+	      Groupe: contact (on le créer directement)
+- puis on clic sur "ajouter un nouveau parametre" et on refait la même chose pour email et carte(editeur de code pour pouvoir coller l'iframe google map)
+- On va pouvoir controller notre numéro de téléphone à partir d'ici.
+
+- On revient ensuite sur noter vue contact et à la place du num et email, on colle "setting('contact.telephone')" ...

@@ -1,0 +1,4 @@
+- On va devoir créer un controller et un model: on va le faire via le terminal avec la commande:
+<< php artisan make:controller siteController --model=Post >> => siteController c'est son nom du controller et Post c'est le nom du model.
+Le nom du model commence par majuscule et sa table est au pluriel et en minuscule.
+- le controller est générer dans le dossier app/http/controllers.
